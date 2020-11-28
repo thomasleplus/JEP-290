@@ -2,6 +2,9 @@
 
 Tests of JEP-290
 
+![Maven](https://github.com/thomasleplus/JEP-290/workflows/Maven/badge.svg)
+![CodeQL](https://github.com/thomasleplus/JEP-290/workflows/CodeQL/badge.svg)
+
 ## Build
 
 To build this project, run the following command (Mac or Unix):

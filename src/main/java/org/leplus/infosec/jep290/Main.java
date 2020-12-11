@@ -8,7 +8,7 @@ public class Main {
 		super();
 	}
 
-	public static void main(String[] args) throws ClassNotFoundException, IOException, InterruptedException {
+	public static void main(String[] args) throws ClassNotFoundException, IOException {
 		Demo.run();
 	}
 

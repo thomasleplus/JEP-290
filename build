@@ -2,8 +2,10 @@
 set -euo pipefail
 IFS=$'\n\t'
 
-$(dirname "$0")/mvnw clean compile jar:jar war:war
+dir=$(dirname "$0")
 
-docker build --tag=jep290/java -f src/main/docker/java/Dockerfile $(dirname "$0")
+"${dir}/mvnw" clean compile jar:jar war:war
 
-docker build --tag=jep290/jboss -f src/main/docker/jboss/Dockerfile $(dirname "$0")
+docker build --tag=jep290/java -f src/main/docker/java/Dockerfile "${dir}"
+
+docker build --tag=jep290/jboss -f src/main/docker/jboss/Dockerfile "${dir}"

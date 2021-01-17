@@ -2,8 +2,8 @@
 
 Tests of JEP-290
 
-![Maven](https://github.com/thomasleplus/JEP-290/workflows/Maven/badge.svg)
-![CodeQL](https://github.com/thomasleplus/JEP-290/workflows/CodeQL/badge.svg)
+[![Maven](https://github.com/thomasleplus/JEP-290/workflows/Maven/badge.svg)](https://github.com/thomasleplus/JEP-290/actions?query=workflow:"Maven")
+[![CodeQL](https://github.com/thomasleplus/JEP-290/workflows/CodeQL/badge.svg)](https://github.com/thomasleplus/JEP-290/actions?query=workflow:"CodeQL")
 
 ## Build
 

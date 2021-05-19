@@ -1,4 +1,4 @@
-FROM jboss/wildfly:14.0.1.Final
+FROM jboss/wildfly:22.0.1.Final
 
 COPY target/jep290-0.0.1-SNAPSHOT.jar /tmp/
 

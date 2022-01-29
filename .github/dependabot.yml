@@ -1,11 +1,15 @@
 version: 2
 updates:
   - package-ecosystem: "maven"
-    directory: "/src/main/docker"
+    directory: "/"
     schedule:
       interval: "daily"
   - package-ecosystem: "docker"
-    directory: "/"
+    directory: "/src/main/docker/java"
+    schedule:
+      interval: "daily"
+  - package-ecosystem: "docker"
+    directory: "/src/main/docker/jboss"
     schedule:
       interval: "daily"
   - package-ecosystem: "github-actions"

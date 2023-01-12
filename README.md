@@ -25,7 +25,7 @@ The test is configured with the following JDK serial filter: java.math.**;!*
 This means that only classes in the java.math package are allowed to
 be serialized.
 
-To run the simple Java test, simply do:
+To run the simple Java 17 test, simply do:
 
 ```
 docker run jep290/java

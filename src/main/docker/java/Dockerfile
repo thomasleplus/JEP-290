@@ -1,4 +1,4 @@
-FROM jboss/wildfly:25.0.0.Final
+FROM eclipse-temurin:17-alpine
 
 COPY target/jep290-0.0.1-SNAPSHOT.jar /tmp/
 

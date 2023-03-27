@@ -1,4 +1,4 @@
-FROM eclipse-temurin:19-alpine
+FROM eclipse-temurin:20-alpine
 
 COPY target/jep290-0.0.1-SNAPSHOT.jar /tmp/
 

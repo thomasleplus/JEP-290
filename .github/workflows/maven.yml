@@ -51,4 +51,4 @@ jobs:
           # shellcheck disable=SC2086
           ./mvnw ${MAVEN_CLI_OPTS} -DdependencyCheck.skip=true verify
       - name: Clean up
-        run: rm .m2/settings.xml
+        run: rm "${HOME}/.m2/settings.xml"

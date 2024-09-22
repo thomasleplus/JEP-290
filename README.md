@@ -15,12 +15,13 @@ To build this project, run the following command (Mac or Unix):
 ```
 
 This will build the java code and then 2 docker images:
+
 - jep290/java: to test the filtering with a bare Java 8 VM.
 - jep290/jboss: to test the filtering with in a JBoss WildFly 14 application server running on top of a Java 8 VM.
 
 ## Run
 
-The test is configured with the following JDK serial filter: java.math.**;!*
+The test is configured with the following JDK serial filter: java.math.\*_;!_
 
 This means that only classes in the java.math package are allowed to
 be serialized.

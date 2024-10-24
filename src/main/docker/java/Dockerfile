@@ -1,4 +1,4 @@
-FROM eclipse-temurin:23_37-jdk-alpine@sha256:e28f3fadcb8e498ae6c2ad0ba617bb193dea50c044cd8972016cfdcfbfc98f25
+FROM eclipse-temurin:23.0.1_11-jdk-alpine@sha256:4041a6673528fe79214d091abe83324cabb07d31d5be790ac228b90f94cf83a6
 
 HEALTHCHECK NONE
 

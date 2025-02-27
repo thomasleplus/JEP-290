@@ -13,6 +13,10 @@ updates:
     directory: "/src/main/docker/jboss"
     schedule:
       interval: "daily"
+  - package-ecosystem: "pip"
+    directory: "/"
+    schedule:
+      interval: "daily"
   - package-ecosystem: "github-actions"
     directory: "/"
     schedule:

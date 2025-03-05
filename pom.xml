@@ -51,9 +51,13 @@
         <configuration>
           <source>${java.minVersion}</source>
           <target>${java.minVersion}</target>
-	  <encoding>UTF-8</encoding>
+          <encoding>UTF-8</encoding>
           <showDeprecation>true</showDeprecation>
           <showWarnings>true</showWarnings>
+          <compilerArgs>
+            <arg>-Xlint:all</arg>
+            <arg>-Xdoclint:all</arg>
+          </compilerArgs>
         </configuration>
       </plugin>
       <plugin>

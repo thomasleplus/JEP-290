@@ -6,15 +6,8 @@ updates:
     schedule:
       interval: "daily"
   - package-ecosystem: "docker"
-    directory: "/src/main/docker/java"
-    schedule:
-      interval: "daily"
-  - package-ecosystem: "docker"
-    directory: "/src/main/docker/jboss"
-    schedule:
-      interval: "daily"
-  - package-ecosystem: "pip"
-    directory: "/"
+    directories:
+      - "/src/main/docker/*"
     schedule:
       interval: "daily"
   - package-ecosystem: "github-actions"

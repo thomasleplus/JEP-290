@@ -1,6 +1,3 @@
-/**
- * 
- */
 package org.leplus.infosec.jep290;
 
 import static org.junit.jupiter.api.Assertions.*;
@@ -10,8 +7,7 @@ import java.io.IOException;
 import org.junit.jupiter.api.Test;
 
 /**
- * @author thomas
- *
+ * Launch tests.
  */
 public class TestMain {
 

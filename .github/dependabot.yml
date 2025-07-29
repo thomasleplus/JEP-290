@@ -5,12 +5,24 @@ updates:
     directory: "/"
     schedule:
       interval: "daily"
+    cooldown:
+      default-days: 7
+    commit-message:
+      prefix: chore(dev-deps)
   - package-ecosystem: "docker"
     directories:
       - "/src/main/docker/*"
     schedule:
       interval: "daily"
+    cooldown:
+      default-days: 7
+    commit-message:
+      prefix: chore(ci-deps)
   - package-ecosystem: "github-actions"
     directory: "/"
     schedule:
       interval: "daily"
+    cooldown:
+      default-days: 7
+    commit-message:
+      prefix: chore(ci-deps)

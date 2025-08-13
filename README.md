@@ -10,7 +10,7 @@ Tests of JEP-290
 
 To build this project, run the following command (Mac or Unix):
 
-```
+```shell
 ./build
 ```
 
@@ -28,13 +28,13 @@ be serialized.
 
 To run the simple Java 17 test, simply do:
 
-```
+```shell
 docker run jep290/java
 ```
 
 You should see the following output:
 
-```
+```text
 Jan 1, 1970 0:00:00 AM sun.misc.ObjectInputFilter$Config lambda$static$0
 INFO: Creating serialization filter from java.math.**;!*
 Jan 1, 1970 0:00:00 AM java.io.ObjectInputStream filterCheck
@@ -60,6 +60,6 @@ should be given the filter that we have set.
 
 To run the JBoss test, simply do:
 
-```
+```shell
 docker run jep290/jboss
 ```

@@ -16,8 +16,8 @@ To build this project, run the following command (Mac or Unix):
 
 This will build the Java code and then 2 Docker images:
 
-- jep290/java: to test the filtering with a bare Java 8 VM.
-- jep290/jboss: to test the filtering with in a JBoss WildFly 14 application server running on top of a Java 8 VM.
+- `jep290/java`: to test the filtering with a bare Java 8 VM.
+- `jep290/jboss`: to test the filtering with in a JBoss WildFly 14 application server running on top of a Java 8 VM.
 
 ## Run
 

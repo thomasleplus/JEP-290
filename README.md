@@ -14,16 +14,16 @@ To build this project, run the following command (Mac or Unix):
 ./build
 ```
 
-This will build the java code and then 2 docker images:
+This will build the Java code and then 2 Docker images:
 
 - jep290/java: to test the filtering with a bare Java 8 VM.
 - jep290/jboss: to test the filtering with in a JBoss WildFly 14 application server running on top of a Java 8 VM.
 
 ## Run
 
-The test is configured with the following JDK serial filter: java.math.\*_;!_
+The test is configured with the following JDK serial filter: `java.math.\*_;!_`
 
-This means that only classes in the java.math package are allowed to
+This means that only classes in the `java.math` package are allowed to
 be serialized.
 
 To run the simple Java 17 test, simply do:
@@ -54,8 +54,8 @@ Exception in thread "main" java.io.InvalidClassException: filter status: REJECTE
         at org.leplus.infosec.jep290.Main.main(Main.java:12)
 ```
 
-Here we can clearly see that the java.math.BigInteger class is allowed
-to be serialized, but the java.lang.Number is being blocked, as it
+Here we can clearly see that the `java.math.BigInteger` class is allowed
+to be serialized, but the `java.lang.Number` is being blocked, as it
 should be given the filter that we have set.
 
 To run the JBoss test, simply do:

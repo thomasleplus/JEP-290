@@ -4,12 +4,11 @@ import java.io.IOException;
 
 public class Main {
 
-	private Main() {
-		super();
-	}
+  private Main() {
+    super();
+  }
 
-	public static void main(String[] args) throws ClassNotFoundException, IOException {
-		Demo.run();
-	}
-
+  public static void main(String[] args) throws ClassNotFoundException, IOException {
+    Demo.run();
+  }
 }

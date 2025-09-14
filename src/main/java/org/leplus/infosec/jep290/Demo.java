@@ -7,23 +7,29 @@ import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
 import java.math.BigInteger;
 
-public class Demo {
+public final class Demo {
 
-	private Demo() {
-		super();
-	}
+  private Demo() {
+    super();
+  }
 
-	public static String run() throws IOException, ClassNotFoundException {
-        try (final ByteArrayOutputStream bos = new ByteArrayOutputStream()) {
-        	try (final ObjectOutputStream out = new ObjectOutputStream(bos)) {
-        		out.writeObject(BigInteger.valueOf(1));
-		        try (final ByteArrayInputStream bis = new ByteArrayInputStream(bos.toByteArray())) {
-		        	try (final ObjectInputStream in = new ObjectInputStream(bis)) {
-				        return in.readObject().toString();
-		        	}
-		        }
-	        }
+  /**
+   * Runs the demo.
+   *
+   * @return a string representation of the deserialized object.
+   * @throws IOException if an I/O error occurs.
+   * @throws ClassNotFoundException if the class of a serialized object cannot be found.
+   */
+  public static String run() throws IOException, ClassNotFoundException {
+    try (final ByteArrayOutputStream bos = new ByteArrayOutputStream()) {
+      try (final ObjectOutputStream out = new ObjectOutputStream(bos)) {
+        out.writeObject(BigInteger.valueOf(1));
+        try (final ByteArrayInputStream bis = new ByteArrayInputStream(bos.toByteArray())) {
+          try (final ObjectInputStream in = new ObjectInputStream(bis)) {
+            return in.readObject().toString();
+          }
         }
-	}
-
+      }
+    }
+  }
 }

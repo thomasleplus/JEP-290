@@ -69,7 +69,7 @@
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-war-plugin</artifactId>
         <version>3.5.1</version>
-	<configuration>
+      <configuration>
           <failOnMissingWebXml>false</failOnMissingWebXml>
         </configuration>
       </plugin>  
@@ -77,23 +77,23 @@
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-jar-plugin</artifactId>
         <version>3.5.0</version>
-	<configuration>
-	  <archive>
-	    <manifest>
-	      <mainClass>org.leplus.infosec.jep290.Main</mainClass>
-	    </manifest>
-	  </archive>
+      <configuration>
+        <archive>
+          <manifest>
+            <mainClass>org.leplus.infosec.jep290.Main</mainClass>
+          </manifest>
+        </archive>
         </configuration>
       </plugin>  
       <plugin>
-	<groupId>org.owasp</groupId>
+      <groupId>org.owasp</groupId>
         <artifactId>dependency-check-maven</artifactId>
         <version>${dependencyCheck.version}</version>
         <configuration>
           <failBuildOnCVSS>${dependencyCheck.threshold}</failBuildOnCVSS>
-	  <failOnError>true</failOnError>
-	  <nvdApiKey>${dependencyCheck.NVDApiKey}</nvdApiKey>
-	  <skip>${dependencyCheck.skip}</skip>
+        <failOnError>true</failOnError>
+        <nvdApiKey>${dependencyCheck.NVDApiKey}</nvdApiKey>
+        <skip>${dependencyCheck.skip}</skip>
         </configuration>
         <executions>
           <execution>

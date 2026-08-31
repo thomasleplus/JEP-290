@@ -8,9 +8,8 @@ import java.io.ObjectOutputStream;
 import java.math.BigInteger;
 
 /**
- * Serializes then immediately deserializes a {@link BigInteger} -- the kind of
- * Java deserialization that a JEP 290 serialization filter is designed to
- * inspect and constrain.
+ * Serializes then immediately deserializes a {@link BigInteger} -- the kind of Java deserialization
+ * that a JEP 290 serialization filter is designed to inspect and constrain.
  */
 public final class Demo {
 

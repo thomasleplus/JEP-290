@@ -7,8 +7,8 @@ import javax.servlet.http.HttpServlet;
 @SuppressWarnings("serial")
 @WebServlet("/demo")
 /**
- * A servlet that triggers {@link Demo#run()} when it is instantiated, so the
- * deserialization demo runs inside a servlet container (e.g. JBoss).
+ * A servlet that triggers {@link Demo#run()} when it is instantiated, so the deserialization demo
+ * runs inside a servlet container (e.g. JBoss).
  */
 public class DemoServlet extends HttpServlet {
 

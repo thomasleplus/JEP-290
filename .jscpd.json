@@ -1,3 +1,9 @@
 {
-  "ignore": [".gitlab-ci.yml", ".m2/**", "src/main/docker/jboss/standalone.xml"]
+  "ignore": [
+    ".gitlab-ci.yml",
+    ".m2/**",
+    "src/main/docker/jboss/standalone.xml",
+    ".github/workflows/osv-scanner-pr.yml",
+    ".github/workflows/osv-scanner.yml"
+  ]
 }
